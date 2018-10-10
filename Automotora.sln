@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaAutomotora", "LogicaAutomotora\LogicaAutomotora.csproj", "{4F0C6734-74D7-428E-A6A4-B40FF8DA248C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automotora.Domain", "Automotora.Domain\Automotora.Domain.csproj", "{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomotora", "uiautomotora\UIAutomotora.csproj", "{522AB7E3-1312-4206-9380-6B4090996399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automotora.Contracts.Services", "Automotora.Contracts.Services\Automotora.Contracts.Services.csproj", "{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automotora.Services", "Automotora.Services\Automotora.Services.csproj", "{FF026475-6C39-4D36-967D-1FA56832EBBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automotora.UI", "Automotora.UI\Automotora.UI.csproj", "{522AB7E3-1312-4206-9380-6B4090996399}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +17,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F0C6734-74D7-428E-A6A4-B40FF8DA248C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F0C6734-74D7-428E-A6A4-B40FF8DA248C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F0C6734-74D7-428E-A6A4-B40FF8DA248C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F0C6734-74D7-428E-A6A4-B40FF8DA248C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF026475-6C39-4D36-967D-1FA56832EBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF026475-6C39-4D36-967D-1FA56832EBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF026475-6C39-4D36-967D-1FA56832EBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF026475-6C39-4D36-967D-1FA56832EBBF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{522AB7E3-1312-4206-9380-6B4090996399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{522AB7E3-1312-4206-9380-6B4090996399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{522AB7E3-1312-4206-9380-6B4090996399}.Release|Any CPU.ActiveCfg = Release|Any CPU

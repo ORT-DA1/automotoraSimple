@@ -7,8 +7,8 @@
     <ProjectGuid>{522AB7E3-1312-4206-9380-6B4090996399}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UIAutomotora</RootNamespace>
-    <AssemblyName>UIAutomotora</AssemblyName>
+    <RootNamespace>Automotora.UI</RootNamespace>
+    <AssemblyName>Automotora.UI</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,11 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AltaAutomovil.cs">
+    <Compile Include="AddVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AltaAutomovil.Designer.cs">
-      <DependentUpon>AltaAutomovil.cs</DependentUpon>
+    <Compile Include="AddVehicle.Designer.cs">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="AutomotoraMilenium.cs">
       <SubType>Form</SubType>
@@ -73,28 +73,28 @@
     <Compile Include="AutomotoraMilenium.Designer.cs">
       <DependentUpon>AutomotoraMilenium.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostrarVehiculo.cs">
+    <Compile Include="InspectVehicle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MostrarVehiculo.Designer.cs">
-      <DependentUpon>MostrarVehiculo.cs</DependentUpon>
+    <Compile Include="InspectVehicle.Designer.cs">
+      <DependentUpon>InspectVehicle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VerAutomoviles.cs">
+    <Compile Include="ListVehicles.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="VerAutomoviles.Designer.cs">
-      <DependentUpon>VerAutomoviles.cs</DependentUpon>
+    <Compile Include="ListVehicles.Designer.cs">
+      <DependentUpon>ListVehicles.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AltaAutomovil.resx">
-      <DependentUpon>AltaAutomovil.cs</DependentUpon>
+    <EmbeddedResource Include="AddVehicle.resx">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutomotoraMilenium.resx">
       <DependentUpon>AutomotoraMilenium.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MostrarVehiculo.resx">
-      <DependentUpon>MostrarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="InspectVehicle.resx">
+      <DependentUpon>InspectVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,8 +106,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="VerAutomoviles.resx">
-      <DependentUpon>VerAutomoviles.cs</DependentUpon>
+    <EmbeddedResource Include="ListVehicles.resx">
+      <DependentUpon>ListVehicles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -123,12 +123,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LogicaAutomotora\LogicaAutomotora.csproj">
-      <Project>{4f0c6734-74d7-428e-a6a4-b40ff8da248c}</Project>
-      <Name>LogicaAutomotora</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -139,6 +133,20 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automotora.Services\Automotora.Services.csproj">
+      <Project>{FF026475-6C39-4D36-967D-1FA56832EBBF}</Project>
+      <Name>Automotora.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automotora.Contracts.Services\Automotora.Contracts.Services.csproj">
+      <Project>{CDFD777F-47B5-4EA0-ABDA-88C986DFC338}</Project>
+      <Name>Automotora.Contracts.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Automotora.Domain\Automotora.Domain.csproj">
+      <Project>{AB26E0B0-B60B-4A0E-ACC8-4BD2133D742B}</Project>
+      <Name>Automotora.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

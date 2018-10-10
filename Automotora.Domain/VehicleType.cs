@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicaAutomotora
+namespace Automotora.Domain
 {
-    public enum TipoVehiculo
+    public enum VehicleType
     {
-        Automovil,
+        Car,
         Moto
     }
 }

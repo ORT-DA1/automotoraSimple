@@ -1,4 +1,4 @@
-﻿namespace UIAutomotora
+﻿namespace Automotora.UI
 {
     partial class AutomotoraMilenium
     {
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.agregarVehiculo = new System.Windows.Forms.Button();
             this.verVehiculo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelPrincipal
             // 
-            this.panelPrincipal.Location = new System.Drawing.Point(152, 12);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(298, 315);
-            this.panelPrincipal.TabIndex = 0;
+            this.mainPanel.Location = new System.Drawing.Point(152, 12);
+            this.mainPanel.Name = "panelPrincipal";
+            this.mainPanel.Size = new System.Drawing.Size(298, 315);
+            this.mainPanel.TabIndex = 0;
             // 
             // agregarVehiculo
             // 
@@ -48,7 +48,7 @@
             this.agregarVehiculo.TabIndex = 1;
             this.agregarVehiculo.Text = "Agregar";
             this.agregarVehiculo.UseVisualStyleBackColor = true;
-            this.agregarVehiculo.Click += new System.EventHandler(this.agregarVehiculo_Click);
+            this.agregarVehiculo.Click += new System.EventHandler(this.addVehicle_Click);
             // 
             // verVehiculo
             // 
@@ -58,7 +58,7 @@
             this.verVehiculo.TabIndex = 2;
             this.verVehiculo.Text = "Ver";
             this.verVehiculo.UseVisualStyleBackColor = true;
-            this.verVehiculo.Click += new System.EventHandler(this.verVehiculo_Click);
+            this.verVehiculo.Click += new System.EventHandler(this.listVehicles_Click);
             // 
             // AutomotoraMilenium
             // 
@@ -67,7 +67,7 @@
             this.ClientSize = new System.Drawing.Size(463, 341);
             this.Controls.Add(this.verVehiculo);
             this.Controls.Add(this.agregarVehiculo);
-            this.Controls.Add(this.panelPrincipal);
+            this.Controls.Add(this.mainPanel);
             this.Name = "AutomotoraMilenium";
             this.Text = "Automotora Milenium";
             this.ResumeLayout(false);
@@ -76,7 +76,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelPrincipal;
+        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Button agregarVehiculo;
         private System.Windows.Forms.Button verVehiculo;
     }

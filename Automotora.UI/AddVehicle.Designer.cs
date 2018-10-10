@@ -1,6 +1,6 @@
-﻿namespace UIAutomotora
+﻿namespace Automotora.UI
 {
-    partial class AltaAutomovil
+    partial class AddVehicle
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,18 +31,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbxTipo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.nudKilometros = new System.Windows.Forms.NumericUpDown();
+            this.nudKilometers = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpIngreso = new System.Windows.Forms.DateTimePicker();
-            this.nudAño = new System.Windows.Forms.NumericUpDown();
-            this.txbModelo = new System.Windows.Forms.TextBox();
-            this.txbMarca = new System.Windows.Forms.TextBox();
+            this.dtpAdded = new System.Windows.Forms.DateTimePicker();
+            this.nudYear = new System.Windows.Forms.NumericUpDown();
+            this.txbModel = new System.Windows.Forms.TextBox();
+            this.txbBrand = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.nudKilometros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAño)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudKilometers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -73,16 +73,16 @@
             // 
             // nudKilometros
             // 
-            this.nudKilometros.DecimalPlaces = 1;
-            this.nudKilometros.Location = new System.Drawing.Point(91, 179);
-            this.nudKilometros.Maximum = new decimal(new int[] {
+            this.nudKilometers.DecimalPlaces = 1;
+            this.nudKilometers.Location = new System.Drawing.Point(91, 179);
+            this.nudKilometers.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.nudKilometros.Name = "nudKilometros";
-            this.nudKilometros.Size = new System.Drawing.Size(120, 20);
-            this.nudKilometros.TabIndex = 21;
+            this.nudKilometers.Name = "nudKilometros";
+            this.nudKilometers.Size = new System.Drawing.Size(120, 20);
+            this.nudKilometers.TabIndex = 21;
             // 
             // label4
             // 
@@ -122,30 +122,30 @@
             // 
             // dtpIngreso
             // 
-            this.dtpIngreso.CustomFormat = "dd/MM/yyyy";
-            this.dtpIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpIngreso.Location = new System.Drawing.Point(91, 138);
-            this.dtpIngreso.Name = "dtpIngreso";
-            this.dtpIngreso.Size = new System.Drawing.Size(120, 20);
-            this.dtpIngreso.TabIndex = 16;
+            this.dtpAdded.CustomFormat = "dd/MM/yyyy";
+            this.dtpAdded.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAdded.Location = new System.Drawing.Point(91, 138);
+            this.dtpAdded.Name = "dtpIngreso";
+            this.dtpAdded.Size = new System.Drawing.Size(120, 20);
+            this.dtpAdded.TabIndex = 16;
             // 
             // nudAño
             // 
-            this.nudAño.Location = new System.Drawing.Point(91, 100);
-            this.nudAño.Maximum = new decimal(new int[] {
+            this.nudYear.Location = new System.Drawing.Point(91, 100);
+            this.nudYear.Maximum = new decimal(new int[] {
             2100,
             0,
             0,
             0});
-            this.nudAño.Minimum = new decimal(new int[] {
+            this.nudYear.Minimum = new decimal(new int[] {
             1900,
             0,
             0,
             0});
-            this.nudAño.Name = "nudAño";
-            this.nudAño.Size = new System.Drawing.Size(120, 20);
-            this.nudAño.TabIndex = 15;
-            this.nudAño.Value = new decimal(new int[] {
+            this.nudYear.Name = "nudAño";
+            this.nudYear.Size = new System.Drawing.Size(120, 20);
+            this.nudYear.TabIndex = 15;
+            this.nudYear.Value = new decimal(new int[] {
             2017,
             0,
             0,
@@ -153,17 +153,17 @@
             // 
             // txbModelo
             // 
-            this.txbModelo.Location = new System.Drawing.Point(91, 63);
-            this.txbModelo.Name = "txbModelo";
-            this.txbModelo.Size = new System.Drawing.Size(120, 20);
-            this.txbModelo.TabIndex = 14;
+            this.txbModel.Location = new System.Drawing.Point(91, 63);
+            this.txbModel.Name = "txbModelo";
+            this.txbModel.Size = new System.Drawing.Size(120, 20);
+            this.txbModel.TabIndex = 14;
             // 
             // txbMarca
             // 
-            this.txbMarca.Location = new System.Drawing.Point(91, 21);
-            this.txbMarca.Name = "txbMarca";
-            this.txbMarca.Size = new System.Drawing.Size(120, 20);
-            this.txbMarca.TabIndex = 13;
+            this.txbBrand.Location = new System.Drawing.Point(91, 21);
+            this.txbBrand.Name = "txbMarca";
+            this.txbBrand.Size = new System.Drawing.Size(120, 20);
+            this.txbBrand.TabIndex = 13;
             // 
             // btnAgregar
             // 
@@ -173,7 +173,7 @@
             this.btnAgregar.TabIndex = 25;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // AltaAutomovil
             // 
@@ -183,19 +183,19 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbxTipo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.nudKilometros);
+            this.Controls.Add(this.nudKilometers);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtpIngreso);
-            this.Controls.Add(this.nudAño);
-            this.Controls.Add(this.txbModelo);
-            this.Controls.Add(this.txbMarca);
+            this.Controls.Add(this.dtpAdded);
+            this.Controls.Add(this.nudYear);
+            this.Controls.Add(this.txbModel);
+            this.Controls.Add(this.txbBrand);
             this.Name = "AltaAutomovil";
             this.Size = new System.Drawing.Size(255, 309);
-            ((System.ComponentModel.ISupportInitialize)(this.nudKilometros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAño)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudKilometers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,15 +206,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbxTipo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown nudKilometros;
+        private System.Windows.Forms.NumericUpDown nudKilometers;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpIngreso;
-        private System.Windows.Forms.NumericUpDown nudAño;
-        private System.Windows.Forms.TextBox txbModelo;
-        private System.Windows.Forms.TextBox txbMarca;
+        private System.Windows.Forms.DateTimePicker dtpAdded;
+        private System.Windows.Forms.NumericUpDown nudYear;
+        private System.Windows.Forms.TextBox txbModel;
+        private System.Windows.Forms.TextBox txbBrand;
         private System.Windows.Forms.Button btnAgregar;
     }
 }

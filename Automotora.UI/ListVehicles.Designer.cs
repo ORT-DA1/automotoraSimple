@@ -1,6 +1,6 @@
-﻿namespace UIAutomotora
+﻿namespace Automotora.UI
 {
-    partial class VerAutomoviles
+    partial class ListVehicles
     {
         /// <summary> 
         /// Required designer variable.
